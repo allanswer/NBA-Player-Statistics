@@ -3,6 +3,7 @@ $( document ).ready(function() {
 });
 
 
+
 $('.state').on('click', function() {
     alert("Nice");
 });

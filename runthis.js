@@ -27,6 +27,7 @@ var mySession = mysqlx.getSession( {
 // as a function called by server
 module.exports =
 {
+
 buildPromise : async function ()
 {
   const mysqlx      = require('@mysql/xdevapi');
@@ -39,10 +40,10 @@ buildPromise : async function ()
      var myDb = session.getSchema('Project');
      // Accessing an existing table
      var myTable = myDb.getTable('all_seasons');
-     var myResult = myTable.select(['player_name', 'college', 'draft_year']).
+     var myResult = myTable.select(['player_name', 'pts', 'draft_year']).
 	 where('player_name like :player_name').
-	 bind('player_name', 'L%').execute();
-
+	 bind('player_name', 'Kobe%').execute();
+1
 	return myResult
  })
  .then(result => {
@@ -50,4 +51,5 @@ buildPromise : async function ()
  });
  return mySession;
 }
+
 }
