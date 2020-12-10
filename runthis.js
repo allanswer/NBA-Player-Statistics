@@ -28,10 +28,10 @@ var mySession = mysqlx.getSession( {
 module.exports =
 {
 
-buildPromise : async function ()
+buildNamePromise : async function (playerName)
 {
   const mysqlx      = require('@mysql/xdevapi');
-
+  var playerName = playerName.who + "%"
   // Connect to server using a connection URL
   var mySession = mysqlx.getSession( {
    host: 'localhost', port: 33060,
@@ -40,10 +40,9 @@ buildPromise : async function ()
      var myDb = session.getSchema('Project');
      // Accessing an existing table
      var myTable = myDb.getTable('all_seasons');
-     var myResult = myTable.select(['player_name', 'pts', 'draft_year']).
+     var myResult = myTable.select(['player_name', 'pts', 'ast', 'reb', 'season']).
 	 where('player_name like :player_name').
-	 bind('player_name', 'Kobe%').execute();
-1
+	 bind('player_name', playerName).execute();
 	return myResult
  })
  .then(result => {

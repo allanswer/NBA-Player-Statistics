@@ -5,8 +5,9 @@ var runQuery = require('./runthis.js');
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false}); //req.body
 
-app.use('/assets',express.static("assets"));
-app.use('/public',express.static("public"));
+
+// app.use('/assets',express.static("assets"));
+app.use(express.static("./public")); // every route will map to this folder or request
 app.set('view engine', 'ejs');
 
 // app.get('/', function (req, res) {
@@ -34,12 +35,23 @@ app.get('/db', async function (req, res) {
 });
 
 app.get('/profile', function (req, res){
-	res.render('profile', {qs: req.query});
+	var  result = ''
+	console.log('get');
+	res.render('profile', {result});
 });
 
-app.post('/profile', urlencodedParser,  function (req, res){
-	console.log(req.body);
-	res.render('profile', {qs: req.query});
+app.post('/profile', urlencodedParser, async function (req, res){
+	console.log('post')
+	var playerName = req.body;
+	if(playerName != null) {
+		console.log(playerName);
+	}
+	var result = await runQuery.buildNamePromise(playerName);
+	res.render('profile', {result});
+});
+
+app.delete('/profile/:card', function (req, res){
+	console.log('Delete');
 });
 
 

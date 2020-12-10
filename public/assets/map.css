@@ -8,3 +8,8 @@ path:hover {
 .list-state{
     columns: 6;
 }
+
+::marker {
+    color: blue;
+    font-size: 1.2em;
+}

@@ -11,18 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbec4c45-8923-47e7-aa5c-b606ed0fcc3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/partials/nav.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/profile.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/HomePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/homePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/homePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/map.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runthis.js" beforeDir="false" afterPath="$PROJECT_DIR$/runthis.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serverExpress.js" beforeDir="false" afterPath="$PROJECT_DIR$/serverExpress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/profile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/profile.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +54,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +72,12 @@
       <workItem from="1606246911461" duration="12799000" />
       <workItem from="1606329448317" duration="13420000" />
       <workItem from="1606701896581" duration="557000" />
-      <workItem from="1606755892989" duration="13933000" />
+      <workItem from="1606755892989" duration="23876000" />
+      <workItem from="1606849888600" duration="1334000" />
+      <workItem from="1606962481891" duration="8000" />
+      <workItem from="1606963129561" duration="6000" />
+      <workItem from="1607025617390" duration="448000" />
+      <workItem from="1607616469209" duration="9743000" />
     </task>
     <servers />
   </component>
@@ -114,10 +114,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="405" y="196" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1606245215919" />
-    <state x="561" y="265" key="run.anything.popup" timestamp="1606761460656">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="2393" y="296" key="run.anything.popup" timestamp="1607628731036">
+      <screen x="1792" y="40" width="1920" height="1080" />
     </state>
     <state x="561" y="265" key="run.anything.popup/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606761460656" />
+    <state x="2393" y="296" key="run.anything.popup/1792.40.1920.1080/0.0.1792.1120@1792.40.1920.1080" timestamp="1607628731036" />
     <state x="561" y="251" key="search.everywhere.popup" timestamp="1606245218756">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
